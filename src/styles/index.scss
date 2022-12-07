@@ -1,8 +1,92 @@
 body {
-  background-color: grey;
+  background-color: rgb(189, 189, 189);
+}
 
-  .logo {
-    width: 200px;
-    height: 200px;
-  }
+.block-app {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 600px;
+  background-color: rgb(214, 103, 190);
+  justify-content: center;
+  position: relative;
+  padding: 100px 0px 0px 120px;
+  border: 10px solid beige;
+}
+
+.Input1 {
+  width: 350px;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 10px;
+  border: 3px beige solid;
+  background-color: rgb(214, 103, 190);
+}
+
+.Input1::placeholder {
+  color: beige;
+}
+
+.Input2::placeholder {
+  color: beige;
+}
+
+.Input2 {
+  width: 350px;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 10px;
+  border: 3px beige solid;
+  background-color: rgb(214, 103, 190);
+  margin-top: 10px;
+}
+
+.block-app2 {
+  margin-top: 20px;
+}
+
+.Input2 {
+  margin-right: 22px;
+}
+
+.block-app3 {
+  display: flex;
+  color: beige;
+  position: relative;
+  right: 5px;
+}
+
+.Input4 {
+  width: 15px;
+}
+
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 10px;
+  border: white;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 20px;
+  left: 85px;
+}
+
+.p2 {
+  position: relative;
+  top: 30px;
+  left: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
 }
