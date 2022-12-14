@@ -12,8 +12,6 @@ function App() {
     ConfirmPassword: '12345'
   })
   
-  console.log(form.Password)
-  
   function handleChange (e) {
     const {name} = e.target
     setForm (prev => {
@@ -23,7 +21,18 @@ function App() {
       }
     })
   }
+  function trueFalse(e) {
+    if(form.Name !== '' && form.Lastname !== '' && form.Phone !== '' && form.Email !== '' && form.Password !== '' && form.ConfirmPassword !== '') {
+      truePassword()
+      e.preventDefault()
+      alert('ssss')
+    }else {
+      alert('Zapolnite')
+      e.preventDefault()
+    }
+  }
 
+  
   function truePassword(e) {
     if(form.Password === form.ConfirmPassword) {
       alert('Confirm')
@@ -48,7 +57,7 @@ function App() {
           <input className="Input4" type='checkbox'/>
           <p className="p1">Keep me signed in</p>
         </div>
-        <button onClick={truePassword}>Sign Up</button>
+        <button onClick={trueFalse}>Sign Up</button>
         <p className="p2">Already have an account? Sign in</p>
       </form>
     </div>
