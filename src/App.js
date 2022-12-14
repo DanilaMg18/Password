@@ -4,10 +4,10 @@ import React , {useState} from "react";
 
 function App() {
   let [form,setForm] = useState({
-    Name: '',
-    Lastname: '',
-    Phone: '',
-    Email: '',
+    Name: 'Danila',
+    Lastname: 'Palcech',
+    Phone: '8652131602',
+    Email: 'dpalcech@gmail.com',
     Password: '12345',
     ConfirmPassword: '12345'
   })
@@ -30,6 +30,7 @@ function App() {
     }else {
       alert('Incorect Password')
     }
+    e.preventDefault()
   }
   
   return (
